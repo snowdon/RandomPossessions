@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Possession.h"
 
 int main (int argc, const char * argv[])
 {
@@ -33,11 +34,17 @@ int main (int argc, const char * argv[])
         }
         
         
+        for (int i = 0; i < 10; i++) {
+            Possession *p = [Possession randomPossession];
+            [items addObject:p];
+        }
+        
         // Release the array
         [items release];
         
         // Don't leave items pointing at freed memory!
         items = nil;
+        
         
         
     }

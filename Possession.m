@@ -46,30 +46,5 @@
 
 }
 
-- (id)initWithPossessionName:(NSString *)name
-              valueIndollars:(int)value
-                serialNumber:(NSString *)sNumber
-{
-    // Call the superclass's designated initializer
-    self = [self init];
-    
-    // Did the superclass's designated initializer succeed?
-    if (self) {
-        // Give the instance variables initial values
-        [self setPossessionName:name];
-        [self setSerialNumber:sNumber];
-        [self setValueInDollars:value];
-        dateCreated = [[NSDate alloc] init];
-    }
-    // Return the address of the newly initialized object
-    return self;
-}
-
-- (id)init
-{
-  return [self initWithPossessionName:@"Possession"
-                       valueIndollars:0
-                         serialNumber:@""];
-}
 
 @end
