@@ -27,17 +27,15 @@ int main (int argc, const char * argv[])
         // For every item in the array as determined by sending count to the items array
 
         NSMutableArray *items = [[NSMutableArray alloc] init];
-        [items doSomethingWeird];
+    
         
         for (int i= 0; i < 10; i++) {
             Possession *p = [Possession randomPossession];
             [items addObject:p];
         }
         
-        for (int i = 0; i < [items count]; i++) {
-            NSLog(@"%@", [items objectAtIndex:i]);
-            
-        }
+        for (Possession *item in items)
+            NSLog(@"%@", item);
         
 
 
