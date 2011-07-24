@@ -10,6 +10,43 @@
 
 @implementation Possession
 
+- (NSString *)description
+{
+    NSString *descriptionString =
+    [[NSString alloc] initWithFormat:@"%@ (%@): Worth $%d, recorded on %@",
+                      possessionName,
+                      serialNumber,
+                      valueInDollars,
+                      dateCreated];
+    
+    return descriptionString;
+    
+}
+
+- (id)init
+{
+    return [self initWithPossessonName:@"Possession"
+                        valueInDollars:0 
+                          serialNumber:@""];
+}
+
+- (id)initWithPossessonName:(NSString *)name 
+             valueInDollars:(int)value 
+               serialNumber:(NSString *)sNumber
+{
+    self = [super init];
+    
+    if (self) {
+        [self setPosssessionName:name];
+        [self setSerialNumber:sNumber];
+        [self setValueInDollars:value];
+        dateCreated = [[NSDate alloc] init];
+    }
+    
+    return self;
+}
+
+
 - (void)setPosssessionName:(NSString *)str
 {
     possessionName = str;
