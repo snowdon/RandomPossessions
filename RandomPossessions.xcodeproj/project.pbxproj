@@ -10,6 +10,7 @@
 		15A7F3B113DB0DBF00EEB154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A7F3B013DB0DBF00EEB154 /* Foundation.framework */; };
 		15A7F3B413DB0DBF00EEB154 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A7F3B313DB0DBF00EEB154 /* main.m */; };
 		15A7F3B813DB0DBF00EEB154 /* RandomPossessions.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 15A7F3B713DB0DBF00EEB154 /* RandomPossessions.1 */; };
+		15BC12C213DB9B5C007D3A43 /* Possession.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BC12C113DB9B5C007D3A43 /* Possession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		15A7F3B313DB0DBF00EEB154 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15A7F3B613DB0DBF00EEB154 /* RandomPossessions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomPossessions-Prefix.pch"; sourceTree = "<group>"; };
 		15A7F3B713DB0DBF00EEB154 /* RandomPossessions.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RandomPossessions.1; sourceTree = "<group>"; };
+		15BC12C013DB9B5C007D3A43 /* Possession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Possession.h; sourceTree = "<group>"; };
+		15BC12C113DB9B5C007D3A43 /* Possession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Possession.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,8 @@
 		15A7F3A113DB0DBF00EEB154 = {
 			isa = PBXGroup;
 			children = (
+				15BC12C013DB9B5C007D3A43 /* Possession.h */,
+				15BC12C113DB9B5C007D3A43 /* Possession.m */,
 				15A7F3B213DB0DBF00EEB154 /* RandomPossessions */,
 				15A7F3AF13DB0DBF00EEB154 /* Frameworks */,
 				15A7F3AD13DB0DBF00EEB154 /* Products */,
@@ -136,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A7F3B413DB0DBF00EEB154 /* main.m in Sources */,
+				15BC12C213DB9B5C007D3A43 /* Possession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +230,7 @@
 				15A7F3BD13DB0DBF00EEB154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
