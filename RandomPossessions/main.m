@@ -34,11 +34,7 @@ int main (int argc, const char * argv[])
         }
         
         
-        for (int i = 0; i < 10; i++) {
-            Possession *p = [Possession randomPossession];
-            [items addObject:p];
-        }
-        
+
         // Release the array
         [items release];
         

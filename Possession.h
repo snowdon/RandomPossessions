@@ -16,6 +16,18 @@
     NSDate *dateCreated;
 }
 
+- (void)setPosssessionName:(NSString *)str;
+- (NSString *)possessionName;
+
+- (void)setSerialNumber:(NSString *)str;
+- (NSString *)possessionName;
+
+- (void)setValueInDollars:(int)i;
+- (int)valueInDollars;
+
+- (NSDate *)dateCreated;
+
+
 + (id)randomPossession;
 
 - (id)initWithPossessonName: (NSString *)name
